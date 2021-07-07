@@ -5,10 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Resposive Multi Page Website Designe</title>
+    <!-- Google Font -->
     <link rel="shortcut icon" href="images/my-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/6d0f32dfab.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <!-- Header Section  -->
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
     
+        <div class="nav-link" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>World's Biggest Harvard University</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Cumque ad minima earum dicta a consequuntur aut. Cupiditate illum nostrum sapiente!    
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+</section>
+<!-- Course -->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, libero?</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Inermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam aliquam dolores culpa, corrupti, vero quia enim quis sed amet illo! Pariatur ullam voluptate vero.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam aliquam dolores culpa, corrupti, vero quia enim quis sed amet illo! Pariatur ullam voluptate vero.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam aliquam dolores culpa, corrupti, vero quia enim quis sed amet illo! Pariatur ullam voluptate vero.</p>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+
+
+
+<!-- JavaScript for Toggle Menu -->
+
+<script>
+
+   var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+          navLinks.style.right = "0";
+   }
+   function hideMenu(){
+          navLinks.style.right = "-200px";
+   }
+
+</script>
+
 </body>
 </html>
